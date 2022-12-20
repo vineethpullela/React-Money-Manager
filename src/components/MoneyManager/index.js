@@ -63,6 +63,19 @@ class MoneyManager extends Component {
                 Add
               </button>
             </form>
+            <div className="transaction-history-container">
+              <h1 className="transaction-heading">History</h1>
+              <div className="transaction-table-container">
+                <ul className="transaction-table">
+                  <li className="table-header">
+                    <p className="table-header-cell">Title</p>
+                    <p className="table-header-cell">Amount</p>
+                    <p className="table-header-cell">Type</p>
+                  </li>
+                  <TransactionItems />
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
