@@ -1,0 +1,32 @@
+.table-row {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  border-bottom: 1px solid #cbd5e1;
+  border-left: 1px solid #cbd5e1;
+  border-right: 1px solid #cbd5e1;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.transaction-text {
+  color: #334155;
+  font-family: 'Roboto';
+  font-size: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.delete-button-container {
+  display: flex;
+}
+.delete-button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.delete-icon {
+  height: 20px;
+}

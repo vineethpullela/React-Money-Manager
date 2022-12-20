@@ -1,6 +1,7 @@
 import {Component} from 'react'
 import './index.css'
 import MoneyDetails from '../MoneyDetails'
+import TransactionItems from '../TransactionItem'
 
 const transactionTypeOptions = [
   {
