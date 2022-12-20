@@ -1,0 +1,53 @@
+.money-details-list-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.money-details-container {
+  height: 110px;
+  width: 220px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.card1 {
+  background-color: #ecfccb;
+  border-radius: 15px;
+  border: 1px solid #84cc16;
+}
+.money-details-img {
+  height: 50px;
+  order: 1;
+}
+.your-balance-text-container {
+  order: 2;
+}
+
+.your-balance-heading {
+  color: #7e858e;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 400;
+}
+.your-balance-amount {
+  color: #7e858e;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.card2 {
+  background-color: #cffafe;
+  border-radius: 15px;
+  border: 1px solid #06b6d4;
+}
+
+.card3 {
+  background-color: #ede9fe;
+  border-radius: 15px;
+  border: 1px solid #7c3aed;
+}

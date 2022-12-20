@@ -1,0 +1,86 @@
+.app-container {
+  align-items: center;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.money-manager-container {
+  width: 80%;
+}
+.money-manager-profile-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/money-manager/money-manager-bg.png');
+  background-size: cover;
+  width: 100%;
+  padding: 25px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+.profile-name {
+  color: #475569;
+  font-family: 'Roboto';
+  font-size: 26px;
+}
+.profile-description {
+  color: #7e858e;
+  font-family: 'Roboto';
+  font-size: 15px;
+}
+.money-manager-name {
+  color: #0b69ff;
+  font-weight: 500;
+}
+
+.transaction-details-container {
+  display: flex;
+}
+.transaction-from {
+  border: 2px solid #7e858e;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+}
+.transaction-heading {
+  color: #7e858e;
+  font-family: 'Roboto';
+  font-size: 18px;
+}
+.label {
+  color: #7e858e;
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.input {
+  color: #131415;
+  font-family: 'Roboto';
+  font-size: 12px;
+  border: 1px solid #7e858e;
+  border-radius: 4px;
+  height: 40px;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 24px;
+  outline: none;
+}
+.add-button {
+  color: #ffffff;
+  background-color: #0b69ff;
+  font-family: 'Roboto';
+  font-size: 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 60px;
+}
