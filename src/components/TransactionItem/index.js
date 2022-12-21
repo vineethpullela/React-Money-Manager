@@ -1,11 +1,11 @@
 import './index.css'
 
-const TransactionItems = props => {
-  const {transactionDetails, onDelete} = props
-  const {title, amount, type, id} = transactionDetails
+const TransactionItem = props => {
+  const {transactionDetails, deleteTransaction} = props
+  const {id, title, amount, type} = transactionDetails
 
-  const deleteTransaction = () => {
-    onDelete(id)
+  const onDeleteTransaction = () => {
+    deleteTransaction(id)
   }
 
   return (
@@ -13,15 +13,16 @@ const TransactionItems = props => {
       <p className="transaction-text">{title}</p>
       <p className="transaction-text">Rs {amount}</p>
       <p className="transaction-text">{type}</p>
-      <div className="delete-button-container">
+      <div className="delete-container">
         <button
-          type="button"
           className="delete-button"
-          onClick={deleteTransaction}
+          type="button"
+          onClick={onDeleteTransaction}
+          testid="delete"
         >
           <img
+            className="delete-img"
             src="https://assets.ccbp.in/frontend/react-js/money-manager/delete.png"
-            className="delete-icon"
             alt="delete"
           />
         </button>
@@ -30,4 +31,4 @@ const TransactionItems = props => {
   )
 }
 
-export default TransactionItems
+export default TransactionItem

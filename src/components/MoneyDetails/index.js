@@ -4,38 +4,44 @@ const MoneyDetails = props => {
   const {balanceAmount, incomeAmount, expensesAmount} = props
 
   return (
-    <div className="money-details-list-container">
-      <div className="money-details-container card1">
+    <div className="money-details-container">
+      <div className="balance-container">
         <img
           src="https://assets.ccbp.in/frontend/react-js/money-manager/balance-image.png"
-          className="money-details-img"
           alt="balance"
+          className="details-img"
         />
-        <div className="your-balance-text-container">
-          <p className="your-balance-heading">Your Balance</p>
-          <p className="your-balance-amount">Rs {balanceAmount}</p>
+        <div>
+          <p className="details-text">Your Balance</p>
+          <p className="details-money" testid="balanceAmount">
+            Rs {balanceAmount}
+          </p>
         </div>
       </div>
-      <div className="money-details-container card2">
+      <div className="income-container">
         <img
           src="https://assets.ccbp.in/frontend/react-js/money-manager/income-image.png"
-          className="money-details-img"
           alt="income"
+          className="details-img"
         />
-        <div className="your-balance-text-container">
-          <p className="your-balance-heading">Your Income</p>
-          <p className="your-balance-amount">Rs {incomeAmount}</p>
+        <div>
+          <p className="details-text">Your Income</p>
+          <p className="details-money" testid="incomeAmount">
+            Rs {incomeAmount}
+          </p>
         </div>
       </div>
-      <div className="money-details-container card3">
+      <div className="expenses-container">
         <img
           src="https://assets.ccbp.in/frontend/react-js/money-manager/expenses-image.png"
-          className="money-details-img"
-          alt="expense"
+          alt="expenses"
+          className="details-img"
         />
-        <div className="your-balance-text-container">
-          <p className="your-balance-heading">Your Expenses</p>
-          <p className="your-balance-amount">Rs {expensesAmount}</p>
+        <div>
+          <p className="details-text">Your Expenses</p>
+          <p className="details-money" testid="expensesAmount">
+            Rs {expensesAmount}
+          </p>
         </div>
       </div>
     </div>
